@@ -1,10 +1,10 @@
 
 import traceback
-import model as ML
+import model as ml
 
 if __name__ == '__main__':
     
     # loan model from json file
-    model = ML.laod_model(2)
+    model = ml.laod_model(2)
     
-    ML.store_model(model, 2)
+    ml.store_model(model, 2)

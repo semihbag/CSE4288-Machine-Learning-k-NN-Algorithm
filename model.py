@@ -38,3 +38,8 @@ def store_model(model, k):
     model_path = pp.model_path(k)
     with open(model_path, 'w', encoding='utf-8') as file:
         json.dump(model, file, ensure_ascii=False, indent=4)
+
+
+
+def train():
+    pass
