@@ -26,7 +26,7 @@ def convert_nominal_to_numeric(model):
     # change nominal values to numeric values according to mapping
     for instance in model:
         processed_instance = {
-            key: mapping[key][value] if key != "Day" else value for key, value in item.items()
+            key: mapping[key][value] if key != "Day" else value for key, value in instance.items()
         }
         model_with_numeric_values.append(processed_instance)
 
