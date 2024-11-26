@@ -31,6 +31,9 @@ def laod_model(k):
 # store model into memory
 def store_model(model, k):
     
+    # convert numeric data to nominal data
+    model = cn.convert_numeric_to_nominal()
+
     # store model into memory as json file
     model_path = pp.check_model_exist_and_return_path(k)
     with open(model_path, 'w', encoding='utf-8') as file:
