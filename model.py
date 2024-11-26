@@ -1,6 +1,6 @@
 import os
 import json
-
+import helper as helper
 
 """
     This class is model class
@@ -20,6 +20,8 @@ def laod_model(k):
     with open(model_path, 'r', encoding='utf-8') as file:
         model = json.load(file)
 
+    model = helper.convert_nominal_to_numeric(model)
+    
     return model
 
 
@@ -51,6 +53,3 @@ def check_model_exist_and_return_path(k):
         model_path = os.path.join(current_dir, "resources", "original_train_dataset.json")
     
     return model_path
-
-
-
