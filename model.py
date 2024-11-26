@@ -1,6 +1,6 @@
 import os
 import json
-import helper as helper
+import converter as cn
 
 """
     This class is model class
@@ -20,8 +20,23 @@ def laod_model(k):
     with open(model_path, 'r', encoding='utf-8') as file:
         model = json.load(file)
 
-    model = helper.convert_nominal_to_numeric(model)
+    for item in model:
+        print(item)
     
+    print("___________________________")
+
+    model = cn.convert_nominal_to_numeric(model)
+
+    for item in model:
+        print(item)
+
+    print("___________________________")
+
+    model = cn.convert_numeric_to_nominal(model)
+
+    for item in model:
+        print(item) 
+
     return model
 
 
