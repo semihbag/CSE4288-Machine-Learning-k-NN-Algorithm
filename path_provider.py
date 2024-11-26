@@ -20,7 +20,7 @@ class PathProvider:
     def check_model_exist_and_return_path(self, k):
 
         # set model path initial
-        model_path = os.path.join(self.current_dir, "resources", "model_k" + str(k) + ".json")
+        model_path = os.path.join(self.current_dir, "resources", "models", "model_k" + str(k) + ".json")
 
         # set exact model path 
         if not os.path.exists(model_path):
