@@ -1,13 +1,13 @@
 import json
 import os
 import traceback
+import model as M
 
-current_dir = os.path.dirname(__file__)
-path = os.path.join(current_dir,"resources", "original_train_dataset.json")
+if __name__ == '__main__':
+    
+    # loan model from json file
+    model = M.laod_model(2)
+    print(model)
 
-try:
-    with open(path, "r", encoding="utf-8") as dosya:
-        veriler = json.load(dosya)
-        
-except Exception as e:
-    print(traceback.format_exc())
+    
+    
