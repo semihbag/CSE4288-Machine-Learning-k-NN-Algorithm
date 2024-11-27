@@ -2,6 +2,7 @@ import os
 import json
 import converter as cn
 from path_provider import PathProvider
+import distance_calculator
 
 """
     This class is model class
@@ -53,5 +54,7 @@ class Model:
 
 
 
-    def train(self):
-        pass
+    def train_with_knn(self):
+        
+        for instance in self.model:
+            distance_calculator.euclidean(instance, None)
