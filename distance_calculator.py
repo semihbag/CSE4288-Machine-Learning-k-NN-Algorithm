@@ -13,6 +13,16 @@ def euclidean(current_instance, test_instance):
     return math.sqrt(distance)
 
 
+
 # manhattan distance calculator
 def manhattan(current_instance, test_instance):
-    pass
+
+    # initial distance is zero
+    distance = 0
+    for item in current_instance:
+        if item == 'Day' and item == 'PlayTennis':
+            continue
+        distance += abs(current_instance[item] - test_instance[item])
+
+    return distance
+
