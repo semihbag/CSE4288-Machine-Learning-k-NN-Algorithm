@@ -4,7 +4,9 @@ import model as ml
 
 if __name__ == '__main__':
     
-    # loan model from json file
-    model = ml.laod_model(2)
-    
-    ml.store_model(model, 2)
+   
+   model = ml.Model(2)
+
+   model.laod_model()
+
+   model.store_model()
