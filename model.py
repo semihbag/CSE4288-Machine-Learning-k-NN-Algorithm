@@ -1,8 +1,6 @@
-import os
 import json
 import converter as cn
 from path_provider import PathProvider
-import distance_calculator
 
 """
     This class is model class
@@ -14,6 +12,9 @@ class Model:
     def __init__(self, k):
         
         # set k value
+        if k % 2 == 0 :
+            k = k + 1
+            print(f"k value can not be even number! New k value: {k} (k = k + 1) ")
         self.k = k
 
         # set a path provider object
@@ -53,8 +54,46 @@ class Model:
         print(f"Model stored: {self.k}nn")
 
 
-
-    def train_with_knn(self):
+    
+    def train_with_knn(self, test_instance_list, distance_function):
         
-        for instance in self.model:
-            distance_calculator.euclidean(instance, None)
+        # this loop is classification process
+        # initial classified instance list is empty
+        classified_test_instance_list = []
+        for test_instance in test_instance_list:
+
+           # initial distance and PlayTennis list is empty
+            neighbour_list = []
+            for current_instance in self.model:
+                distance = distance_function(current_instance, test_instance)
+                neighbour = {
+                    "distance" : distance,
+                    "PlayTennis" : current_instance['PlayTennis']
+                }
+                neighbour_list.append(neighbour)
+
+            # sorting the list according to the distance value
+            neighbour_list.sort(key=lambda x: x['distance'])
+            
+            # first k neighbour
+            nearest_neighbour_list = neighbour_list[:self.k]
+
+            # summation of all PlayTennis values
+            sum_play_tennis = sum(n['PlayTennis'] for n in nearest_neighbour_list)
+
+            # set test instance label
+            label = 1 if (sum_play_tennis > self.k / 2) else 0 
+
+            # classified test instance
+            classified_test_instance = {
+                'Day': len(neighbour_list) + 1, 
+                'Outlook': test_instance['Outlook'], 
+                'Temperature': test_instance['Temperature'], 
+                'Humidity': test_instance['Humidity'], 
+                'Wind': test_instance['Wind'], 
+                'PlayTennis': label
+            }
+
+            classified_test_instance_list.append(classified_test_instance)
+
+       

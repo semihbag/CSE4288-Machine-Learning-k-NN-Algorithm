@@ -1,4 +1,3 @@
-import os
 import json
 from path_provider import PathProvider as pp
 
