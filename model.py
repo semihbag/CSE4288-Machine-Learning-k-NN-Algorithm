@@ -54,7 +54,7 @@ class Model:
         print(f"Model stored: {self.k}nn")
 
 
-    
+    # this function handle classification part
     def train_with_knn(self, test_instance_list, distance_function):
         
         # this loop is classification process
@@ -98,4 +98,18 @@ class Model:
             self.model.append(classified_test_instance)
             
         return classified_test_instance_list
-    
+
+
+
+    # this function returns instances data as integer array
+    def return_model_as_array(self):
+
+        data_array = []
+        for instance in self.model:
+            data = []
+            for key, value in instance.items():
+                if key != 'Day':
+                    data.append(value)
+            data_array.append(data)
+
+        return data_array
