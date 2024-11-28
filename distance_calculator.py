@@ -6,7 +6,7 @@ def euclidean(current_instance, test_instance):
     # initial distance is zero
     distance = 0
     for item in current_instance:
-        if item == 'Day' and item == 'PlayTennis':
+        if item == 'Day' or item == 'PlayTennis':
             continue
         distance += (current_instance[item] - test_instance[item]) ** 2
 
@@ -20,7 +20,7 @@ def manhattan(current_instance, test_instance):
     # initial distance is zero
     distance = 0
     for item in current_instance:
-        if item == 'Day' and item == 'PlayTennis':
+        if item == 'Day' or item == 'PlayTennis':
             continue
         distance += abs(current_instance[item] - test_instance[item])
 
