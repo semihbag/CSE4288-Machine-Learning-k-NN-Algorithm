@@ -95,5 +95,7 @@ class Model:
             }
 
             classified_test_instance_list.append(classified_test_instance)
-
-       
+            self.model.append(classified_test_instance)
+            
+        return classified_test_instance_list
+    
