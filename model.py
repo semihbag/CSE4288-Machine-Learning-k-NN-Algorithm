@@ -37,7 +37,7 @@ class Model:
         model = cn.convert_nominal_to_numeric(model)
     
         self.model = model
-        print(f"Model loaded: {self.k}nn")
+        print(f"Model loaded: {self.k}nn\n")
 
 
 
@@ -51,7 +51,7 @@ class Model:
         with open(model_path, 'w', encoding='utf-8') as file:
             json.dump(model, file, ensure_ascii=False, indent=4)
 
-        print(f"Model stored: {self.k}nn")
+        print(f"Model stored: {self.k}nn\n")
 
 
     # this function handle classification part
@@ -96,16 +96,20 @@ class Model:
 
             classified_test_instance_list.append(classified_test_instance)
             self.model.append(classified_test_instance)
+
+            print(f"Test Instance: {test_instance}")
+            print(f"Classified Test Instance: {classified_test_instance}")
+            print(f"Classification: {label}\n")
             
         return classified_test_instance_list
 
 
 
     # this function returns instances data as integer array
-    def return_model_as_array(self):
+    def return_instances_as_int_array(self,instances):
 
         data_array = []
-        for instance in self.model:
+        for instance in instances:
             data = []
             for key, value in instance.items():
                 if key != 'Day':
