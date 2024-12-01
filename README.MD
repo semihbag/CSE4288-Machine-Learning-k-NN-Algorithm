@@ -1,0 +1,11 @@
+- you can run the code from main.py
+- you can perform multi model at same running phase (line 20 and line 21)
+- only thing that you have to give paramaters to knn function
+    - k (number)
+    - euclidean / manhattan (dc.euclidean / dc. manhattan)
+- this code will print all details 
+- also you can see deep details about models after running the code 
+    - ./resources/models
+- if you want to perform this code with another train dataset, you must change the original_train_dataset.json file
+    -./resources/original_train_dataset.json
+    -dataset format must be same as playtennis 

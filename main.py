@@ -18,6 +18,7 @@ if __name__ == '__main__':
     #   -manhattan
     # select one, and give as parameter
     model.classify_with_knn(k=3, distance_function=dc.euclidean)
+    model.classify_with_knn(k=5, distance_function=dc.euclidean)
 
     # evaluet and log
     model.evaluate_models_and_log()
