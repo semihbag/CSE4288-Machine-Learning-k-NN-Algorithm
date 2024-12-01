@@ -29,4 +29,4 @@ if __name__ == '__main__':
     data = model.return_instances_as_int_array(model.training_data_set)
     
     # visualize
-    visualizer.visualize(data=data)
+#    visualizer.visualize(data=data)
