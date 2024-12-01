@@ -9,3 +9,4 @@
 - if you want to perform this code with another train dataset, you must change the original_train_dataset.json file
     -./resources/original_train_dataset.json
     -dataset format must be same as playtennis 
+- if yo want, you can enable vizualizer (main line 33) to see instances
