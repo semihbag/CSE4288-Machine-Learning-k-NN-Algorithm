@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def visualize(data, no_test_instances):
+def visualize(data):
  
     data = np.array(data)
 
@@ -27,9 +27,6 @@ def visualize(data, no_test_instances):
     plt.figure(figsize=(8, 6))
     plt.scatter(reduced_data[:, 0], reduced_data[:, 1], c= colors, edgecolor='k')
 
-    for i in range(-no_test_instances, 0): 
-        last_point_color = colors[i]
-        plt.scatter(reduced_data[i, 0], reduced_data[i, 1], c=last_point_color, edgecolor='k', s=100, marker='o')
 
     plt.title("k-NN")
     plt.grid()

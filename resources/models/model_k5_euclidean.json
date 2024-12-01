@@ -1,0 +1,489 @@
+{
+    "k": 5,
+    "DistanceFunc": "euclidean",
+    "ConfusionMatrix": {
+        "TruePositive": 8,
+        "FalsePositive": 5,
+        "TrueNegative": 0,
+        "FalseNegative": 1
+    },
+    "Accuracy": 0.5714285714285714,
+    "ClassifiedInstances": [
+        {
+            "Prediction": 1,
+            "ActualClass": 0,
+            "TestData": {
+                "Day": 1,
+                "Outlook": 0,
+                "Temperature": 0,
+                "Humidity": 0,
+                "Wind": 0,
+                "PlayTennis": 0
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.7320508075688772,
+                    "PlayTennis": 1
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 0,
+            "TestData": {
+                "Day": 2,
+                "Outlook": 0,
+                "Temperature": 0,
+                "Humidity": 0,
+                "Wind": 1,
+                "PlayTennis": 0
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                }
+            ]
+        },
+        {
+            "Prediction": 0,
+            "ActualClass": 1,
+            "TestData": {
+                "Day": 3,
+                "Outlook": 1,
+                "Temperature": 0,
+                "Humidity": 0,
+                "Wind": 0,
+                "PlayTennis": 1
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 1,
+            "TestData": {
+                "Day": 4,
+                "Outlook": 2,
+                "Temperature": 1,
+                "Humidity": 0,
+                "Wind": 0,
+                "PlayTennis": 1
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 1,
+            "TestData": {
+                "Day": 5,
+                "Outlook": 2,
+                "Temperature": 2,
+                "Humidity": 1,
+                "Wind": 0,
+                "PlayTennis": 1
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.7320508075688772,
+                    "PlayTennis": 0
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 0,
+            "TestData": {
+                "Day": 6,
+                "Outlook": 2,
+                "Temperature": 2,
+                "Humidity": 1,
+                "Wind": 1,
+                "PlayTennis": 0
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.7320508075688772,
+                    "PlayTennis": 1
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 1,
+            "TestData": {
+                "Day": 7,
+                "Outlook": 1,
+                "Temperature": 2,
+                "Humidity": 1,
+                "Wind": 1,
+                "PlayTennis": 1
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 0,
+            "TestData": {
+                "Day": 8,
+                "Outlook": 0,
+                "Temperature": 1,
+                "Humidity": 0,
+                "Wind": 0,
+                "PlayTennis": 0
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 1,
+            "TestData": {
+                "Day": 9,
+                "Outlook": 0,
+                "Temperature": 2,
+                "Humidity": 1,
+                "Wind": 0,
+                "PlayTennis": 1
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 2.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 2.0,
+                    "PlayTennis": 1
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 1,
+            "TestData": {
+                "Day": 10,
+                "Outlook": 2,
+                "Temperature": 1,
+                "Humidity": 1,
+                "Wind": 0,
+                "PlayTennis": 1
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 1,
+            "TestData": {
+                "Day": 11,
+                "Outlook": 0,
+                "Temperature": 1,
+                "Humidity": 1,
+                "Wind": 1,
+                "PlayTennis": 1
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 1,
+            "TestData": {
+                "Day": 12,
+                "Outlook": 1,
+                "Temperature": 1,
+                "Humidity": 0,
+                "Wind": 1,
+                "PlayTennis": 1
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 1,
+            "TestData": {
+                "Day": 13,
+                "Outlook": 1,
+                "Temperature": 0,
+                "Humidity": 1,
+                "Wind": 0,
+                "PlayTennis": 1
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.7320508075688772,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.7320508075688772,
+                    "PlayTennis": 1
+                }
+            ]
+        },
+        {
+            "Prediction": 1,
+            "ActualClass": 0,
+            "TestData": {
+                "Day": 14,
+                "Outlook": 2,
+                "Temperature": 1,
+                "Humidity": 0,
+                "Wind": 1,
+                "PlayTennis": 0
+            },
+            "KNearestNeighbourList": [
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.0,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 0
+                },
+                {
+                    "distance": 1.4142135623730951,
+                    "PlayTennis": 1
+                },
+                {
+                    "distance": 1.7320508075688772,
+                    "PlayTennis": 1
+                }
+            ]
+        }
+    ]
+}

@@ -16,18 +16,22 @@ class PathProvider:
 
 
     # create path for given model
-    def model_path(self,k):
-        return os.path.join(self.current_dir, "resources", "models", "model_k" + str(k) + ".json")
+    def model_path(self, k, distance_func):
+        return os.path.join(self.current_dir, "resources", "models", "model_k" + str(k) + "_" + distance_func + ".json")
     
-    # this fucntion checks whether model exist ot not
-    # retunr model path
-    def check_model_exist_and_return_path(self, k):
+    
 
-        # set model path initial
-        model_path = self.model_path(k)
+    ### NO NEED ANY MORE THIS FUNCTION ###
 
-        # set exact model path 
-        if not os.path.exists(model_path):
-            model_path = os.path.join(self.current_dir, "resources", "original_train_dataset.json")
+    # # this fucntion checks whether model exist ot not
+    # # retunr model path
+    # def check_model_exist_and_return_path(self, k):
+
+    #     # set model path initial
+    #     model_path = self.model_path(k)
+
+    #     # set exact model path 
+    #     if not os.path.exists(model_path):
+    #         model_path = os.path.join(self.current_dir, "resources", "original_train_dataset.json")
         
-        return model_path
+    #     return model_path

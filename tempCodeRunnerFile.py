@@ -45,13 +45,15 @@ class Model:
     def store_model(self):
 
         for model in self.evaluated_model_data_list:
-           
+            # convert numeric data to nominal data
+            model['ClassifiedInstances']['TestData'] = cn.convert_numeric_to_nominal(model['ClassifiedInstances']['TestData'])
+
             # store model into memory as json file
             model_path = self.pp.model_path(model['k'], model['DistanceFunc'])
             with open(model_path, 'w', encoding='utf-8') as file:
                 json.dump(model, file, ensure_ascii=False, indent=4)
 
-            print(f"Model stored: {model['k']}nn\n")
+            print(f"Model stored: {self.k}nn\n")
 
 
     # this function handle classification part
